@@ -1,0 +1,69 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/刘佳/.m2/repository/io/grpc/grpc-netty-shaded/1.57.2/grpc-netty-shaded-1.57.2.jar;C:/Users/刘佳/.m2/repository/com/google/guava/guava/32.0.1-android/guava-32.0.1-android.jar;C:/Users/刘佳/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar;C:/Users/刘佳/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:/Users/刘佳/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar;C:/Users/刘佳/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar;C:/Users/刘佳/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar;C:/Users/刘佳/.m2/repository/io/grpc/grpc-core/1.57.2/grpc-core-1.57.2.jar;C:/Users/刘佳/.m2/repository/io/grpc/grpc-stub/1.57.2/grpc-stub-1.57.2.jar;C:/Users/刘佳/.m2/repository/io/grpc/grpc-api/1.57.2/grpc-api-1.57.2.jar;C:/Users/刘佳/.m2/repository/io/grpc/grpc-protobuf/1.57.2/grpc-protobuf-1.57.2.jar;C:/Users/刘佳/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar;C:/Users/刘佳/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.17.0/proto-google-common-protos-2.17.0.jar;C:/Users/刘佳/.m2/repository/io/grpc/grpc-protobuf-lite/1.57.2/grpc-protobuf-lite-1.57.2.jar;C:/Users/刘佳/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar;C:/Users/刘佳/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/刘佳/Desktop/NCI课程/Semester2/04 distribued systems 分布式系统/期中考试/IntelligentRetialSystem/src/main/java;C:/Users/刘佳/Desktop/NCI课程/Semester2/04 distribued systems 分布式系统/期中考试/IntelligentRetialSystem/target/generated-sources/protobuf/java;C:/Users/刘佳/Desktop/NCI课程/Semester2/04 distribued systems 分布式系统/期中考试/IntelligentRetialSystem/target/generated-sources/protobuf/grpc-java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/刘佳/Desktop/NCI课程/Semester2/04 distribued systems 分布式系统/期中考试/IntelligentRetialSystem/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'IntelligentRetailSystem 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/刘佳/Desktop/NCI课程/Semester2/04 distribued systems 分布式系统/期中考试/IntelligentRetialSystem/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'IntelligentRetailSystem 1.0-SNAPSHOT API'
+Client
+distsys.intelligentretialsystem
+GUI
+distsys.generated
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-netty-shaded\1.57.2\grpc-netty-shaded-1.57.2.jar = 1744641793514
+C:\Users\刘佳\.m2\repository\com\google\guava\guava\32.0.1-android\guava-32.0.1-android.jar = 1744641794244
+C:\Users\刘佳\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar = 1738606193188
+C:\Users\刘佳\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar = 1738606193223
+C:\Users\刘佳\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar = 1744641794437
+C:\Users\刘佳\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar = 1744641793896
+C:\Users\刘佳\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar = 1744641793896
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-core\1.57.2\grpc-core-1.57.2.jar = 1744641794646
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-stub\1.57.2\grpc-stub-1.57.2.jar = 1744641794715
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-api\1.57.2\grpc-api-1.57.2.jar = 1744641794459
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-protobuf\1.57.2\grpc-protobuf-1.57.2.jar = 1744641794368
+C:\Users\刘佳\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar = 1738606193224
+C:\Users\刘佳\.m2\repository\com\google\api\grpc\proto-google-common-protos\2.17.0\proto-google-common-protos-2.17.0.jar = 1744641794877
+C:\Users\刘佳\.m2\repository\io\grpc\grpc-protobuf-lite\1.57.2\grpc-protobuf-lite-1.57.2.jar = 1744641794512
+C:\Users\刘佳\.m2\repository\com\google\protobuf\protobuf-java\3.21.12\protobuf-java-3.21.12.jar = 1744119328623
+C:\Users\刘佳\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar = 1744643538151
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\src\main\java = 1744796962026
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\generated-sources\protobuf\java = 1744813508818
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\generated-sources\protobuf\grpc-java = 1744813509038
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\allclasses-index.html = 1744813517937
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\allpackages-index.html = 1744813517939
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\constant-values.html = 1744813517690
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\element-list = 1744813517650
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\help-doc.html = 1744813517981
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\index-all.html = 1744813517971
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\index.html = 1744813517907
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\member-search-index.js = 1744813517947
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\module-search-index.js = 1744813517941
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\overview-summary.html = 1744813517976
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\overview-tree.html = 1744813517904
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\package-search-index.js = 1744813517942
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\search.html = 1744813517973
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\serialized-form.html = 1744813517704
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\tag-search-index.js = 1744813517948
+C:\Users\刘佳\Desktop\NCI课程\Semester2\04 distribued systems 分布式系统\期中考试\IntelligentRetialSystem\target\reports\apidocs\type-search-index.js = 1744813517945
