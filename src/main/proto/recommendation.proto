@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "distsys.generated";
+option java_outer_classname = "RecommendationProto";
+
+package distsys;
+
+service RecommendationService {
+  rpc GetRecommendations(RecommendationRequest) returns (RecommendationResponse);
+  rpc StreamRecommendations(RecommendationRequest) returns (stream RecommendationResponse);
+
+}
+
+message RecommendationRequest {
+  string product_name = 1;
+}
+
+message RecommendationResponse {
+  repeated string recommendations = 1;
+}
+
+
+
+

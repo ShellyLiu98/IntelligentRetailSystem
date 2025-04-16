@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "distsys.generated";
+option java_outer_classname = "CheckoutProto";
+
+package distsys;
+
+service CheckoutService {
+  rpc ProcessPayment (stream ShoppingCart) returns (PaymentResponse);
+  rpc PaymentStatus (stream PaymentRequest) returns (PaymentResponse);
+  rpc StreamPaymentStatus(PaymentRequest) returns (stream PaymentResponse);
+
+}
+
+message ShoppingCart {
+  repeated string product_ids = 1;
+  string payment_method = 2;
+}
+
+message PaymentRequest {
+  string transaction_id = 1;
+}
+
+message PaymentResponse {
+  string status = 1;
+  string transaction_id = 2;
+}
+
+

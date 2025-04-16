@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "distsys.generated";
+option java_outer_classname = "InventoryProto";
+
+package distsys;
+
+service InventoryService {
+  rpc CheckStock(ProductRequest) returns (StockResponse);
+  rpc MonitorStock(stream StockUpdateRequest) returns (stream StockUpdateResponse);
+  rpc StreamStockUpdates(ProductRequest) returns (stream StockUpdateResponse);
+
+}
+
+message ProductRequest {
+  string product_id = 1;
+}
+
+message StockResponse {
+  string stock_status = 1;
+}
+
+message StockUpdateRequest {
+  repeated string product_ids = 1;
+}
+
+message StockUpdateResponse {
+  string product_id = 1;
+  int32 stock_quantity = 2;
+}
+
+
