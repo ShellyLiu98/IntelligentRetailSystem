@@ -1,34 +1,37 @@
 package GUI;
-import javax.swing.*;
-import java.awt.*;
-import distsys.GUI.RecommendationPanel;
-import distsys.intelligentretailsystem.GUI.CheckoutPanel;
-import distsys.intelligentretailsystem.GUI.InventoryPanel;
 
+import javax.swing.*;
+
+/**
+ * GrpcControlPanel - Main GUI frame to display and switch between all gRPC service panels.
+ * Uses a tabbed interface for Recommendation, Checkout, and Inventory services.
+ */
 public class GrpcControlPanel extends JFrame {
 
     public GrpcControlPanel() {
-        setTitle("Intelligent Retail System");
+        // Set up window title and size
+        setTitle("Intelligent Retail System - gRPC GUI");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Center the window
 
-        // Create tabs for each service
+        // Create a tabbed pane for the service panels
         JTabbedPane tabbedPane = new JTabbedPane();
 
-        // Add the individual service panels
-        tabbedPane.addTab("Recommendation", new RecommendationPanel());
-        tabbedPane.addTab("Checkout", new CheckoutPanel());
-        tabbedPane.addTab("Inventory", new InventoryPanel());
+        // Add each service panel as a tab
+        tabbedPane.addTab(" Recommendation", new RecommendationPanel());
+        tabbedPane.addTab(" Checkout", new CheckoutPanel());
+        tabbedPane.addTab(" Inventory", new InventoryPanel());
 
-        // Add the tabbed pane to the window
-        add(tabbedPane, BorderLayout.CENTER);
+        // Add the tabbed pane to the main window
+        add(tabbedPane);
 
+        // Make the window visible
         setVisible(true);
     }
 
     public static void main(String[] args) {
-        // Launch the GUI
+        // Start the GUI using the Event Dispatch Thread
         SwingUtilities.invokeLater(() -> new GrpcControlPanel());
     }
 }
