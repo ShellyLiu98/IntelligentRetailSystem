@@ -14,6 +14,11 @@ import java.util.Arrays;
 
 import distsys.generated.CheckoutProto.*;
 import distsys.generated.CheckoutServiceGrpc;
+import distsys.generated.ShoppingCart;
+import distsys.generated.PaymentRequest;
+import distsys.generated.PaymentResponse;
+import distsys.generated.CheckoutServiceGrpc;
+
 
 /**
  *
