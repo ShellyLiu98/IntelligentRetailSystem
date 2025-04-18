@@ -36,7 +36,7 @@ public class InventoryPanel extends JPanel {
 
     public InventoryPanel() {
         // Create gRPC channel
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50052)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50055)
                 .usePlaintext()
                 .build();
 
