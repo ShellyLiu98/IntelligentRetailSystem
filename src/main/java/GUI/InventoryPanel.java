@@ -66,17 +66,21 @@ public class InventoryPanel extends JPanel {
 
         // Button: Check stock (Unary RPC)
         checkStockButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String productId = productIdField.getText();
-                ProductRequest request = ProductRequest.newBuilder()
-                        .setProductId(productId)
-                        .build();
+     @Override
+     public void actionPerformed(ActionEvent e) {
+         String productId = productIdField.getText();
+         ProductRequest request = ProductRequest.newBuilder()
+                 .setProductId(productId)
+                 .build();
 
-                StockResponse response = blockingStub.checkStock(request);
-                resultArea.setText("Available Status: " + response.getStockStatus());
-            }
-        });
+         try {
+             StockResponse response = blockingStub.checkStock(request);
+             resultArea.setText("Available Quantity: " + response.getStockStatus());
+         } catch (Exception ex) {
+             resultArea.setText("Error: " + ex.getMessage());
+         }
+     }
+ });
 
         // Button: Monitor stock (Server Streaming RPC)
 monitorButton.addActionListener(new ActionListener() {
