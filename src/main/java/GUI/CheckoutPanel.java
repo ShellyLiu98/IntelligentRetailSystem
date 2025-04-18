@@ -55,7 +55,7 @@ public class CheckoutPanel extends JPanel {
         add(middlePanel, BorderLayout.CENTER);
         add(new JScrollPane(resultArea), BorderLayout.SOUTH);
 
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50054)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051)
                 .usePlaintext()
                 .build();
 
