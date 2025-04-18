@@ -69,7 +69,7 @@ public class RecommendationPanel extends JPanel {
     private void getRecommendations(String productName) {
         try {
             // Connect to gRPC server
-            ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051)
+            ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50053)
                     .usePlaintext()
                     .build();
 
