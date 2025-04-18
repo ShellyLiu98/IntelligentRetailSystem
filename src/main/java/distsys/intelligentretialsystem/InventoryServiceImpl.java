@@ -5,6 +5,7 @@
 
 package distsys.intelligentretialsystem;
 
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 import distsys.generated.InventoryServiceGrpc;
 import distsys.generated.ProductRequest;
@@ -21,12 +22,29 @@ public class InventoryServiceImpl extends InventoryServiceGrpc.InventoryServiceI
 
     @Override
     public void checkStock(ProductRequest request, StreamObserver<StockResponse> responseObserver) {
+        String productId = request.getProductId();
+
+        // Simple API key validation: Product ID must start with "key_"
+        if (!productId.startsWith("key_")) {
+            // If the API key is invalid, return an authentication error
+            responseObserver.onError(
+                Status.UNAUTHENTICATED
+                    .withDescription("Invalid API key. Product ID must start with 'key_'")
+                    .asRuntimeException()
+            );
+            return;
+        }
+
+        // If the API key is valid, process the request and return stock status
         StockResponse response = StockResponse.newBuilder()
-                .setStockStatus("In Stock")
+                .setStockStatus("In Stock for product: " + productId)
                 .build();
+
+        // Send the response and complete the call
         responseObserver.onNext(response);
         responseObserver.onCompleted();
     }
+
 
     @Override
     public StreamObserver<StockUpdateRequest> monitorStock(StreamObserver<StockUpdateResponse> responseObserver) {
