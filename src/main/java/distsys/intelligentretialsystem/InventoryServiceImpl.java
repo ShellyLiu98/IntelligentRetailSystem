@@ -45,7 +45,7 @@ public class InventoryServiceImpl extends InventoryServiceGrpc.InventoryServiceI
         responseObserver.onCompleted();
     }
 
-
+    
     @Override
     public StreamObserver<StockUpdateRequest> monitorStock(StreamObserver<StockUpdateResponse> responseObserver) {
         return new StreamObserver<StockUpdateRequest>() {
