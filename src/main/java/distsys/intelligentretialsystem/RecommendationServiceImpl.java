@@ -16,7 +16,7 @@ import distsys.generated.RecommendationResponse;
  * API key validation is simulated by requiring the product name to start with "key_".
  * If the condition is not met, the server responds with UNAUTHENTICATED status.
  * 
- * Author: Jia Liu
+ * Author: Jia Liu                                                
  */
 public class RecommendationServiceImpl extends RecommendationServiceGrpc.RecommendationServiceImplBase {
 
