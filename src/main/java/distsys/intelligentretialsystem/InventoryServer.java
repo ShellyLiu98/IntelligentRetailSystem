@@ -14,7 +14,7 @@ public class InventoryServer {
                 .addService(new InventoryServiceImpl()) 
                 .build();
 
-        System.out.println("Inventory gRPC Server started on port 50052");
+        System.out.println("Inventory gRPC Server started on port 50055");
         server.start();
         server.awaitTermination();
     }
